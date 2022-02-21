@@ -1,0 +1,96 @@
+.debug{
+    border: 1px solid black;
+
+}
+
+/* Reset e Clearfix */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* General */
+body{
+    background-color: white;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+.logo{
+    height: 70px;
+    padding-right: 20px;
+    border-right: 1px solid #E5E5E5;
+}
+nav{
+    padding: 40px 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+nav li a{
+    text-decoration: none;
+    color: #ABABAB;
+}
+a:hover{
+    color: blue;
+}
+.banner1{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.hero{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}
+.hoverlay::before{
+    content: " ";
+    background-color: rgba(0,0,0,0.2);
+    position: absolute; 
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+}
+
+/* Main */
+.banner-text{
+    width: 60%;
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+}
+h1{
+    font-weight: normal;
+}
+h2{
+    font-weight: 900;
+    font-size:xx-large;
+    padding-top: 20px;
+}
+h3{
+    font-weight: normal;
+    color: #999999;
+    padding-bottom: 20px;
+}
