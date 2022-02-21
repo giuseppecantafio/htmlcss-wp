@@ -1,7 +1,3 @@
-.debug{
-    border: 1px solid black;
-
-}
 
 /* Reset e Clearfix */
 *{
@@ -17,6 +13,7 @@
 
 /* General */
 body{
+    max-width: 1900px;
     background-color: white;
     font-family: 'Heebo', sans-serif;
     
@@ -108,29 +105,39 @@ h3{
 .col-img1{
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/img-1.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 200px;
-  object-fit: cover;
   border-radius: 20px;
 }
 .col-img2{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/banner-2.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 200px;
-    object-fit: cover;
     border-radius: 20px;
 }
 .col-img3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/img-3.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 200px;
-    object-fit: cover;
     border-radius: 20px;
 }
 .text-box{
-    padding-top: 20px;
+    padding-top: 10px;
+}
+.box-h3{
+    color: black;
+}
+.box-p{
+    color: #B8B8B8;
+    line-height: 20px;
 }
 
 /* Footer */
