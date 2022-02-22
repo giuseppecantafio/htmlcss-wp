@@ -39,7 +39,6 @@ nav ul li{
     padding-right: 10px;
     font-size: 20px;
     font-weight: 200;
-
 }
 nav li a{
     text-decoration: none;
@@ -52,14 +51,15 @@ a:hover{
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    height: 500px;
 }
 .hero{
     width: 100%;
-    height: 500px;
+    height: 100%;
     object-fit: cover;
 
 }
-.hoverlay::before{
+.hoverlay::before{ /* Primo metodo per mettere sfondo opaco con uno pseudoelemento prima*/
     content: " ";
     background-color: rgba(0,0,0,0.2);
     position: absolute; 
@@ -102,10 +102,10 @@ h3{
     width: 60%;
     padding: 0 20px 0 20px;
 }
-.col-img1{
+.col-img1{ /*Secondo metodo per mettere lo sfondo opaco */
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/img-1.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; /*Non vado ad usare object-fit avendo l'immagine in CSS */
   background-size: cover;
   width: 100%;
   height: 200px;
